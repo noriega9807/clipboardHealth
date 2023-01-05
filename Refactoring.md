@@ -9,3 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+I decided to create a separate function to generate a key to not repeat code, also got rid of the nested if's and else conditions to make the code more readable and also apply ternary operators to asign the candidate variable to also avoid assigning that variable too much. The original code doesn't apply DRY code and also has some nested conditions that make the code less readable and the return value could also be easily sent with a ternary operator and avoiding an extra if condition.
