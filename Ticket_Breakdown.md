@@ -24,6 +24,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 - Add tests.
 - Criteria: 
   - if the custom_id is longer than 50, it should be rejected.
+- Estimate: 5 points. Assuming the team uses scrum
 
 ### 2 Add custom_id in the UI
 - Add to the UI the field to save the custom id.
@@ -33,13 +34,17 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 - Criteria
   - if the custom_id is longer than 50 or has a special character, it should show a message indicating it.
   - The field must complain to the specs as specified in figma. I'll asume we have figma and we can check the design there.
+-Estimate: 5 points.
 
 ### 3 Create getAgentID function to return the id of the Agent
 - Create a function that receives an Agent object that checks if the custom_id is set and is not an empty string and if so, return tha value decrypted, otherwise return the id. 
 - Write 2 different test cases when an Agent has a custom_id and one where he doesn't
+-Estimate: 3 points.
 
 ### 4 Modify getShiftsByFacility to get custom_id
 - Call within getShiftsByFacility the function getAgentID, once we have the data from the Agents and assign the returned value to the Agent object.
+-Estimate: 1 points.
 
-### 4 Modify generateReport
+### 5 Modify generateReport
 - This function should show the returned value from ticket 4 instead of the id
+-Estimate: 1 points.
